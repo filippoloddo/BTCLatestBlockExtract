@@ -1,7 +1,7 @@
 # BTCLatestBlockExtract
 
 Reads block data from the Bitcoin API https://chain.api.btc.com/v3/block/latest/tx 
-and parses relevant fields in a json format as follows:
+and parses relevant fields and returns a json structure as follows:
     
     {
        "block_height":702457,
