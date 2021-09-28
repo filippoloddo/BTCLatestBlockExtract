@@ -17,7 +17,7 @@ and parses relevant fields and returns a json structure as follows:
 
 
 
-The application checks at regular intervals if there is a new block info and if so it processes the data avoiding duplicate records. 
+The application checks at regular intervals if there is a new block info and if so it processes the data avoiding duplicate records. The new block is recognized by an increment in the timestamp, assumed to be always increasing when the latest block is updated. 
 
 The print statement is for demonstration purposes to show when the retrieved block is already fetched, this can be moved to a log in case of a production pipeline.
     
