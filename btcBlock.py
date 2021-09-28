@@ -34,6 +34,7 @@ def get_blocks(latest_block_time):
         addresses = []
         block_info['block_height'] = block['block_height']
         ts = block['block_time']
+        # Create new record only if there is new data
         if ts > latest_block_time:
             block_info['block_time'] = datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
             block_info['fee'] = block['fee']
